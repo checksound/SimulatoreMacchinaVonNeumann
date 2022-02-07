@@ -1,6 +1,6 @@
 # Von Neumann Machine Simulator
 
-Semplici programmi dimostrativi di un simulatore di una _Macchina di Von Neumann_. 
+Semplici programmi dimostrativi di un [simulatore di una _Macchina di Von Neumann_](./vnsimulator.html). 
 
 Vedi: https://checksound.gitbook.io/tecnologie3/architettura-computer/esercizi
 
