@@ -96,3 +96,10 @@ JMP 1
 HLT
 ```
 
+### Crediti
+
+Questo simulatore della macchina di Von Neumann è stato realizzato da [Lorenzo Ganni](https://www.linkedin.com/in/lorenzo-ganni-4b4830209/).
+
+Questo file costituisce un'estensione dell'opera di Giorgio Meini, Fiorenzo Formichi, 'Tecnologie e progettazione di sistemi informatici e di telecomunicazioni'.
+
+© Zanichelli Editore S.p.A., 2015
