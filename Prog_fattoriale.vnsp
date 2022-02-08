@@ -9,7 +9,7 @@ LOD #1,MUL X,STO Y,LOD X,SUB #1,STO X,JMZ 9,LOD Y,JMP 1,HLT,NOP,NOP,NOP,NOP,NOP,
 VAL
 ___________
 
-0,24,0,0,
+4,0,0,0,
 VAR
 ___________
 
