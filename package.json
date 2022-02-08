@@ -4,6 +4,7 @@
   "description": "Von Neumann simulator",
   "main": "vnsimulator.html",
   "scripts": {
+    "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
