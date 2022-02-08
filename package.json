@@ -1,0 +1,22 @@
+{
+  "name": "simulatoremacchinavonneumann",
+  "version": "1.0.0",
+  "description": "Von Neumann simulator",
+  "main": "vnsimulator.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/checksound/SimulatoreMacchinaVonNeumann.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/checksound/SimulatoreMacchinaVonNeumann/issues"
+  },
+  "homepage": "https://github.com/checksound/SimulatoreMacchinaVonNeumann#readme",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
