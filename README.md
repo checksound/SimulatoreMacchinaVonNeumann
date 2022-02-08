@@ -1,6 +1,6 @@
 # Von Neumann Machine Simulator
 
-Semplici programmi dimostrativi di un [simulatore di una _Macchina di Von Neumann_](./vnsimulator.html). 
+Semplici programmi dimostrativi di un [simulatore di una _Macchina di Von Neumann_](./vnsimulator/index.html). 
 
 Vedi: https://checksound.gitbook.io/tecnologie3/architettura-computer/esercizi
 
@@ -8,9 +8,49 @@ Vedi: https://checksound.gitbook.io/tecnologie3/architettura-computer/esercizi
 
 Carica il file [programmi/power.vnsp](./programmi/power.vnsp), nella variabile X il valore della base, in Y il valore dell'esponente e in Z il risultato del calcolo. Es: X = -2, Y = 3 --> Z = -8.
 
+Sotto le istruzioni del programma:
+
+```
+LOD Y
+JMZ 12
+LOD X
+STO Z
+LOD Y
+SUB #1
+JMZ 14
+STO Y
+LOD Z
+MUL X
+STO Z
+JMP 4
+LOD #1
+STO Z
+HLT
+```
+
 ## Calcolo 3N + 1
 
 Il programma [programmi/Prog_3Npiu1.vnsp](./programmi/Prog_3Npiu1.vnsp) determina la metà del numero N, intero positivo,  inizialmente contenuto nella locazione di indirizzo X se esso è pari, altrimenti – se N è dispari – determina il successore del suo triplo e memorizza il risultato nella locazione di indirizzo Y. Se X = 3 --> Y = 3 * 3 + 1 mentre se X = 6 --> Y = 6 / 2 = 3
+
+Sotto le istruzioni con `X` variabile di input e `Z` variabile di output, `Y` è utilizzata come variabile di appoggio:
+
+```
+LOD X
+DIV #2
+MUL #2
+STO Y
+LOD X
+SUB Y
+JMZ 11
+LOD X
+MUL #3
+ADD #1
+JMP 13
+LOD X
+DIV #2
+STO Z
+HALT
+```
 
 ## Il problema 3N + 1
 
@@ -20,7 +60,7 @@ Dato un numero intero positivo N, definiamo al sequenza '3N + 1' che parte da N 
 
 Il programma [programmi/somma_primi_n_numeri.vnsp](./programmi/somma_primi_n_numeri.vnsp).
 
-Di seguito le istruzioni, con X per numero intero di input e Y per il risultato:
+Di seguito le istruzioni, con `X` per numero intero di input e `Y` per il risultato:
 
 ```
 LOD X 
@@ -40,4 +80,19 @@ HLT
 Il programma [programmi/Prog_fattoriale.vnsp](./programmi/Prog_fattoriale.vnsp), calcola il fattoriale, di X e inserisce il risultato nella variabile Y. Ad esempio se vogliamo calcolare il fattoriale di 4, 4!, --> 4 * 3 * 2 * 1 = 24.
 
 Il fattoriale di un numero naturale N (in simboli N!) è il prodotto di tutti i numeri naturali compresi tra 1 e N (N incluso); per definizione 0! = 1.
+
+Sotto le istruzioni del programma con `X` variabile di input e `Y` variabile di output:
+
+```
+LOD #1
+MUL X
+STO Y
+LOD X
+SUB #1
+STO X
+JMZ 9
+LOD Y
+JMP 1
+HLT
+```
 
