@@ -2,9 +2,9 @@
   "name": "simulatoremacchinavonneumann",
   "version": "1.0.0",
   "description": "Von Neumann simulator",
-  "main": "vnsimulator.html",
+  "main": "./vnsimulator/index.html",
   "scripts": {
-    "start": "http-server",
+    "start": "http-server ./vnsimulator &",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
