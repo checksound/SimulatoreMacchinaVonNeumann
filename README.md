@@ -1,8 +1,26 @@
 # Von Neumann Machine Simulator
 
-Semplici programmi dimostrativi di un [simulatore di una _Macchina di Von Neumann_](./vnsimulator/index.html). 
+__Simulatore di una _Macchina di Von Neumann__ per eseguire il __ciclo fetch-execute__. Questo simulatore, rappresenta una semplice CPU con program counter, instruction register e registro accumulatore collegata alla memoria principale tramite bus dati/istruzioni e bus indirizzi che permette l'esecuzione di semplici programmi a scopo didattico.
 
-Vedi: https://checksound.gitbook.io/tecnologie3/architettura-computer/esercizi
+Vedi [Esempio di architettura computer](https://checksound.gitbook.io/tecnologie3/architettura-computer/esempio-architettura) per le istruzioni accettate dalla CPU del simulatore.
+
+Per utilizzare il simulatore cliccare sul file `./vnsimulator/index.html` e aprirlo con il browser.
+
+![](./Simulatore_VN.PNG)
+
+
+Con menù _apri_ è possibile caricare in memoria semplici programmi d'esempio già codificati nella directory `./programmi` per poi poterli eseguire.
+
+![](./selezione_programma.PNG)
+
+Una volta selezionato il programma è caricato in memoria RAM (evidenziato nella figura sotto in giallo) ed è pronto a questo punto per essere eseguito:
+
+![](./caricamento_programma.PNG)
+
+Tramite il pulsante start (evidenziato nella figura sottostante) il programma è mandato in esecuzione:
+
+![](./programma_in_esecuzione.PNG)
+
 
 ## Elevamento a potenza
 
