@@ -118,7 +118,7 @@ HLT
 
 [ARCHITETTURA COMPUTER](./ARCHITETTURA_COMPUTER.pdf)
 
-### Implementazioni più avanzate
+### Implementazioni più avanzata
 
 https://github.com/c2r0b/vnmsim
 
